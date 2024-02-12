@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventanilla Única</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo de estilos CSS -->
+</head>
+<body>
+    <header>
+        <h1>Ventanilla Única</h1>
+    </header>
+    <main>
+        <section id="formulario">
+            <h2>Solicitud de Servicio</h2>
+            <form action="procesar_solicitud.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="Correo electronico">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <label for="tipo_de_solicitud">Tipo de solicitud:</label>
+<select id="tipo_de_solicitud" name="tipo_de_solicitud" required>
+    <option value="consulta">Consulta</option>
+    <option value="reclamo">Reclamo</option>
+    <option value="solicitud">Solicitud</option>
+</select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+        </section>
+        <section id="informacion">
+            <h2>Información de Contacto</h2>
+            <p>Teléfono: 123-456-7890</p>
+            <p>Email: info@ventanillaunica.com</p>
+            <p>Dirección: Calle Principal #123</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ventanilla Única</p>
+    </footer>
+</body>
+</html>
